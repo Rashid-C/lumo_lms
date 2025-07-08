@@ -24,9 +24,20 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
           href='/'
         >
           <Image src={Logo} alt='LOGO' width={32} height={32} />
-          LumoLMS.
+          LumosLMS.
         </Link>
         {children}
+        <div className='text-balance text-center text-xstextmuted-foreground'>
+          By clicking continue, you agree to our{' '}
+          <span className='hover:text-primary hover:underline'>
+            Terms of service
+          </span>{' '}
+          and{' '}
+          <span className='hover:text-primary hover:underline'>
+            Privacy Policy
+          </span>
+          .
+        </div>
       </div>
     </div>
   )
